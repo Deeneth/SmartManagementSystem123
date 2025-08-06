@@ -112,7 +112,7 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
@@ -157,9 +157,9 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">In Progress</p>
-                <p className="text-3xl font-bold text-blue-600">{stats.inProgress}</p>
+                <p className="text-3xl font-bold text-teal-600">{stats.inProgress}</p>
               </div>
-              <Users className="text-blue-600" size={32} />
+              <Users className="text-teal-600" size={32} />
             </div>
           </div>
           
@@ -197,7 +197,7 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
               <select
                 value={filters.status}
                 onChange={(e) => setFilters({ ...filters, status: e.target.value })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
               >
                 <option value="all">All Status</option>
                 <option value="pending">Pending</option>
@@ -212,7 +212,7 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
               <select
                 value={filters.priority}
                 onChange={(e) => setFilters({ ...filters, priority: e.target.value })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
               >
                 <option value="all">All Priorities</option>
                 <option value="urgent">Urgent</option>
@@ -227,7 +227,7 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
               <select
                 value={filters.department}
                 onChange={(e) => setFilters({ ...filters, department: e.target.value })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
               >
                 <option value="all">All Departments</option>
                 {departments.map(dept => (
@@ -245,7 +245,7 @@ export default function AdminDashboard({ user, onLogout }: AdminDashboardProps) 
                   placeholder="Search complaints..."
                   value={filters.search}
                   onChange={(e) => setFilters({ ...filters, search: e.target.value })}
-                  className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                 />
               </div>
             </div>

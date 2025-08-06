@@ -110,7 +110,7 @@ export default function ComplaintCard({ complaint, isAdmin = false, onStatusUpda
           {complaint.description.length > 200 && (
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-2"
+              className="text-emerald-600 hover:text-emerald-800 text-sm font-medium mt-2"
             >
               {isExpanded ? 'Show Less' : 'Show More'}
             </button>
@@ -119,12 +119,12 @@ export default function ComplaintCard({ complaint, isAdmin = false, onStatusUpda
 
         {/* Admin Notes */}
         {complaint.adminNotes && (
-          <div className="bg-blue-50 rounded-lg p-4 mb-4">
+          <div className="bg-emerald-50 rounded-lg p-4 mb-4">
             <div className="flex items-center gap-2 mb-2">
-              <MessageSquare size={16} className="text-blue-600" />
-              <span className="font-medium text-blue-900">Admin Notes</span>
+              <MessageSquare size={16} className="text-emerald-600" />
+              <span className="font-medium text-emerald-900">Admin Notes</span>
             </div>
-            <p className="text-blue-800 text-sm">{complaint.adminNotes}</p>
+            <p className="text-emerald-800 text-sm">{complaint.adminNotes}</p>
           </div>
         )}
 
@@ -148,7 +148,7 @@ export default function ComplaintCard({ complaint, isAdmin = false, onStatusUpda
             {!showStatusUpdate ? (
               <button
                 onClick={() => setShowStatusUpdate(true)}
-                className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors text-sm font-medium"
               >
                 <Edit3 size={16} />
                 Update Status
@@ -163,7 +163,7 @@ export default function ComplaintCard({ complaint, isAdmin = false, onStatusUpda
                     value={adminNotes}
                     onChange={(e) => setAdminNotes(e.target.value)}
                     rows={3}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm"
                     placeholder="Add notes about the complaint resolution..."
                   />
                 </div>

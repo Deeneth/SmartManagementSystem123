@@ -114,7 +114,7 @@ export default function ComplaintForm({ user, onClose, onSubmit }: ComplaintForm
               type="button"
               onClick={handlePreview}
               disabled={!formData.title || !formData.description}
-              className="flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="flex items-center gap-2 px-4 py-2 bg-teal-100 text-teal-700 rounded-lg hover:bg-teal-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Zap size={16} />
               Preview AI Categorization
@@ -123,9 +123,9 @@ export default function ComplaintForm({ user, onClose, onSubmit }: ComplaintForm
 
           {/* AI Preview Results */}
           {aiPreview && (
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-4 border border-blue-200">
+            <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-lg p-4 border border-emerald-200">
               <h3 className="font-medium text-gray-900 mb-3 flex items-center gap-2">
-                <Zap className="text-purple-600" size={16} />
+                <Zap className="text-teal-600" size={16} />
                 AI Analysis Results
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -163,7 +163,7 @@ export default function ComplaintForm({ user, onClose, onSubmit }: ComplaintForm
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50"
+              className="flex-1 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:from-emerald-600 hover:to-teal-700 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50"
             >
               {isSubmitting ? (
                 <>
