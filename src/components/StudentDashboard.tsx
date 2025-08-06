@@ -37,7 +37,7 @@ export default function StudentDashboard({ user, onLogout }: StudentDashboardPro
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
@@ -64,7 +64,7 @@ export default function StudentDashboard({ user, onLogout }: StudentDashboardPro
                 <p className="text-sm font-medium text-gray-600">Total Complaints</p>
                 <p className="text-3xl font-bold text-gray-900">{stats.total}</p>
               </div>
-              <FileText className="text-emerald-600" size={32} />
+              <FileText className="text-purple-600" size={32} />
             </div>
           </div>
           
@@ -82,9 +82,9 @@ export default function StudentDashboard({ user, onLogout }: StudentDashboardPro
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">In Progress</p>
-                <p className="text-3xl font-bold text-teal-600">{stats.inProgress}</p>
+                <p className="text-3xl font-bold text-pink-600">{stats.inProgress}</p>
               </div>
-              <AlertCircle className="text-teal-600" size={32} />
+              <AlertCircle className="text-pink-600" size={32} />
             </div>
           </div>
           
@@ -108,7 +108,7 @@ export default function StudentDashboard({ user, onLogout }: StudentDashboardPro
                 onClick={() => setFilter(status)}
                 className={`px-4 py-2 rounded-lg font-medium transition-all ${
                   filter === status
-                    ? 'bg-emerald-600 text-white'
+                    ? 'bg-purple-600 text-white'
                     : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200'
                 }`}
               >
@@ -119,7 +119,7 @@ export default function StudentDashboard({ user, onLogout }: StudentDashboardPro
           
           <button
             onClick={() => setShowForm(true)}
-            className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:from-emerald-600 hover:to-teal-700 transition-all duration-200 flex items-center gap-2"
+            className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-lg font-medium hover:from-purple-600 hover:to-pink-700 transition-all duration-200 flex items-center gap-2"
           >
             <Plus size={20} />
             New Complaint
@@ -140,7 +140,7 @@ export default function StudentDashboard({ user, onLogout }: StudentDashboardPro
               </p>
               <button
                 onClick={() => setShowForm(true)}
-                className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition-colors"
+                className="bg-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors"
               >
                 Submit Your First Complaint
               </button>

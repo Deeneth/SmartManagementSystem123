@@ -45,14 +45,14 @@ export function clearCurrentUser(): void {
 export function initializeDefaultUsers(): void {
   const users = getUsers();
   if (users.length === 0) {
-    const defaultAdmin: User = {
-      id: 'admin1',
-      name: 'System Administrator',
-      email: 'admin@college.edu',
+    const superAdmin: User = {
+      id: 'superadmin',
+      name: 'Super Administrator',
+      email: 'superadmin@college.edu',
       role: 'admin',
       department: 'Infrastructure & Maintenance'
     };
     
-    saveUsers([defaultAdmin]);
+    saveUsers([superAdmin]);
   }
 }
